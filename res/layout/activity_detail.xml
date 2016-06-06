@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <ScrollView 
+        android:id="@+id/scro"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="8"
+        
+        >
+      <TextView 
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        
+        />             
+    </ScrollView>
+    <Button 
+        android:id="@+id/del"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/whitesmoke"
+        android:text="删除"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="@drawable/bt_bg3"
+        />
+    <Button 
+        android:id="@+id/collect"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/whitesmoke"
+        android:text="收藏"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="@drawable/bt_bg2"
+        />
+
+</LinearLayout>

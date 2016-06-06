@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ProgressBar 
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/wrong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/wrong"
+        android:text="服务器太渣了~~按换一 批重试吧!"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />     
+    <ListView 
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:layout_above="@+id/change"
+        android:layout_alignParentTop="true"
+        />
+   
+    <Button 
+        android:id="@+id/change"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="换一批"
+        android:textColor="@color/whitesmoke"
+        android:background="@drawable/bt_bg2"
+        />
+</RelativeLayout>
